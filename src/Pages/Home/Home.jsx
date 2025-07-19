@@ -17,7 +17,6 @@ function Home() {
 
     promise.then(
       function (res) {
-        console.log(res);
         setData(res.documents);
       },
       function (error) {
@@ -29,7 +28,6 @@ function Home() {
   const handleCardClick = (movie) => {
     navigate(`/movie/${movie.title}`, { state: movie });
   };
-  console.log(data);
 
   const BlankPage = () => {
     return (
