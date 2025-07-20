@@ -3,6 +3,7 @@ import { databases } from "../../Appwrite/Auth";
 import conf from "../../conf/conf";
 import { useNavigate } from "react-router-dom";
 import HomePostCard from "../../Components/Moviecard/HomePostCard";
+import { Helmet } from "react-helmet";
 // import './style.css'
 
 function Home() {
@@ -46,6 +47,10 @@ function Home() {
   return (
     <>
       <div className="w-full flex flex-wrap card ">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>seehdmovie</title>
+        </Helmet>
         {data &&
           data.length !== 0 &&
           data.map((movie) => (
