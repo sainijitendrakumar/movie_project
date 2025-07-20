@@ -18,7 +18,6 @@ function Home() {
 
     promise.then(
       function (res) {
-        console.log(res);
         setData(res.documents);
       },
       function (error) {
@@ -30,7 +29,6 @@ function Home() {
   const handleCardClick = (movie) => {
     navigate(`/movie/${movie.title}`, { state: movie });
   };
-  console.log(data);
 
   const BlankPage = () => {
     return (
@@ -50,6 +48,10 @@ function Home() {
         <Helmet>
           <meta charSet="utf-8" />
           <title>seehdmovie</title>
+          <meta
+            name="description"
+            content="Download the latest Hollywood, Bollywood, and South Indian movies in HD quality. Fast downloads, no registration required. New releases updated daily!"
+          />
         </Helmet>
         {data &&
           data.length !== 0 &&
