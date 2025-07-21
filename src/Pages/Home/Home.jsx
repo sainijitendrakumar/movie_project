@@ -4,6 +4,7 @@ import conf from "../../conf/conf";
 import { useNavigate } from "react-router-dom";
 import HomePostCard from "../../Components/Moviecard/HomePostCard";
 import { Helmet } from "react-helmet";
+import { Query } from "appwrite";
 // import './style.css'
 
 function Home() {
@@ -13,7 +14,8 @@ function Home() {
   useEffect(() => {
     const promise = databases.listDocuments(
       conf.appwriteDatabaseId,
-      conf.appwriteCollectionId
+      conf.appwriteCollectionId,
+      [Query.orderDesc("$createdAt")]
     );
 
     promise.then(
@@ -61,7 +63,7 @@ function Home() {
           data.map((movie) => (
             <div
               key={movie.$id}
-              className="lala  m-3 rounded-md"
+              className="lala m-3 rounded-md"
               onClick={() => handleCardClick(movie)}
             >
               <HomePostCard item={movie} />
