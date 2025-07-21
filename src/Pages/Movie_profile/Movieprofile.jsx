@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { useLocation, useParams } from "react-router-dom";
 
 function Movieprofile() {
@@ -7,16 +8,28 @@ function Movieprofile() {
   return (
     <div className="">
       <div className="flex flex-col items-center">
-        <h1 className="text-3xl font-bold ">
-          Download | {movie.title} | {movie.language} | Full Movie 720p
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>seehdmovie:-{movie.title}</title>
+          <meta
+            name="description"
+            content="Get the latest dual audio and dubbed movies in Hindi, English, Tamil & Telugu. Watch or download in high quality without ads!"
+          />
+          <link rel="canonical" href="https://seehdmovie.xyz/movie/" />
+        </Helmet>
+        <h1 className="text-3xl font-bold py-2 ">
+          Download | {movie.title} | Full Movie 720p
         </h1>
-        <p className="text-xl font-semibold text-center">{movie.discription}</p>
+        <p className="text-xl font-semibold text-center py-2">
+          {movie.discription}
+        </p>
         <img
           src={movie.img_url}
           alt={movie.title}
           className="flex "
+          width="500px"
+          height="auto"
           style={{
-            width: "500px",
             height: "auto",
             borderRadius: "8px",
             margin: "5px",

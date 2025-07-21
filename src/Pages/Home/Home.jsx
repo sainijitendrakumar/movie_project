@@ -3,7 +3,7 @@ import { databases } from "../../Appwrite/Auth";
 import conf from "../../conf/conf";
 import { useNavigate } from "react-router-dom";
 import HomePostCard from "../../Components/Moviecard/HomePostCard";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 // import './style.css'
 
 function Home() {
@@ -44,15 +44,18 @@ function Home() {
 
   return (
     <>
+      <Helmet>
+        <title>seehdmovie</title>
+        <meta
+          name="description"
+          content="Download the latest Hollywood, Bollywood, and South Indian movies in HD quality. Fast downloads, no registration required. New releases updated daily!"
+        />
+        <link rel="canonical" href="https://seehdmovie.xyz/" />
+      </Helmet>
+      <h1 className="font-bold text-4xl text-center text-red-600 my-2">
+        Latest Movies & Web Series
+      </h1>
       <div className="w-full flex flex-wrap card ">
-        <Helmet>
-          <meta charSet="utf-8" />
-          <title>seehdmovie</title>
-          <meta
-            name="description"
-            content="Download the latest Hollywood, Bollywood, and South Indian movies in HD quality. Fast downloads, no registration required. New releases updated daily!"
-          />
-        </Helmet>
         {data &&
           data.length !== 0 &&
           data.map((movie) => (

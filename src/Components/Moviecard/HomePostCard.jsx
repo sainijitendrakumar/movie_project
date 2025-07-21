@@ -19,6 +19,10 @@ function HomePostCard({ item }) {
         <img
           src={item.img_url}
           alt={item.title}
+          width="170px"
+          height="250px"
+          title={item.title}
+          loading="eager"
           style={{
             width: "170px",
             height: "250px",
@@ -27,14 +31,14 @@ function HomePostCard({ item }) {
         />
       </div>
       <div className="p-1 flex justify-center items-center">
-        <h4
+        <h2
           className="mt-1 text-center font-bold tracking-tight text-gray-500 dark:text-white"
           style={{
             lineHeight: "1.2",
           }}
         >
           {item.title}
-        </h4>
+        </h2>
       </div>
     </div>
   );
