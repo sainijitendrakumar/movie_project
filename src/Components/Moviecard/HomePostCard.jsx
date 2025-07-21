@@ -1,9 +1,7 @@
 import React from "react";
 
 function HomePostCard({ item }) {
-  const handleClick = () => {
-    console.log("Card clicked!");
-  };
+  const handleClick = () => {};
   return (
     <div
       onClick={handleClick}
