@@ -3,7 +3,7 @@ import { databases } from "../../Appwrite/Auth";
 import conf from "../../conf/conf";
 import { useNavigate } from "react-router-dom";
 import HomePostCard from "../../Components/Moviecard/HomePostCard";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 // import './style.css'
 
 function Home() {
