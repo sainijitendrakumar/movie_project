@@ -57,7 +57,7 @@ const Navbar = () => {
       </div>
 
       {/* Bottom Nav */}
-      <div className="flex mt-4 space-x-6 text-white font-medium">
+      <div className="flex mt-4 space-x-6 text-[#c5ebff] font-medium">
         <button
           className="px-3 py-1 bg-[#0F172A] rounded-md cursor-pointer"
           onClick={() => handleCardClick()}

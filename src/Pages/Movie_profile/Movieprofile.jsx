@@ -5,6 +5,7 @@ import { useLocation, useParams } from "react-router-dom";
 function Movieprofile() {
   const location = useLocation();
   const movie = location.state;
+
   return (
     <div className="">
       <div className="flex flex-col items-center">
@@ -48,24 +49,34 @@ function Movieprofile() {
         <h4 className="text-red-700 text-xl font-bold my-2">
           -: {movie.title} :-
         </h4>
-        <div className="my-0.5">
+        <p className="font-[12px] text-[#aaa]  ">
+          <span className="bg-[#FF6D00] text-white font-bold text-[20px] px-[38px] py-[19px] rounded-[7px] inline-block text-center m-[4px_2px]">
+            G-Drive [GDToT] Links:
+          </span>
+        </p>
+        <div className="w-2/3 my-2.5 p-1 text-white bg-[#7d3741] border text-center border-red-500 rounded-3xl">
           <a
-            className="text-violet-500 text-2xl font-bold"
+            className=" text-xl font-semibold"
             href={movie.movie_drive_url}
             target="_blank"
             rel="noopener noreferrer"
           >
-            Drive URL [720p Link]
+            {movie.title} | {movie.language} | [720p Link]
           </a>
         </div>
-        <div className="my-0.5">
+        <p className="font-[12px] text-[#aaa]  ">
+          <span className="bg-[#FF6D00] text-white font-bold text-[20px] px-[38px] py-[19px] rounded-[7px] inline-block text-center m-[4px_2px]">
+            Telegram Links:
+          </span>
+        </p>
+        <div className="w-2/3 my-2.5 p-1 text-white bg-[#7d3741] border text-center border-red-500 rounded-3xl">
           <a
-            className="text-violet-500 text-2xl font-bold"
+            className=" text-xl font-semibold"
             href={movie.telegram_url}
             target="_blank"
             rel="noopener noreferrer"
           >
-            Telegram link [720p Link]
+            {movie.title} | {movie.language} | [720p Link]
           </a>
         </div>
       </div>
