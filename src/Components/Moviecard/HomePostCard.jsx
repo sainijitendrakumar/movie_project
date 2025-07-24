@@ -12,7 +12,7 @@ function HomePostCard({ item }) {
           height="220px"
           title={item.title}
           loading="eager"
-          className="rounded-lg w-[170px] h-[250px] object-cover"
+          className="rounded-lg w-[166px] h-[220px] object-cover"
         />
 
         {/* Bottom Gradient Overlay */}
