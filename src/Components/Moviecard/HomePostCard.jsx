@@ -8,8 +8,8 @@ function HomePostCard({ item }) {
         <img
           src={item.img_url}
           alt={item.title}
-          width="170px"
-          height="250px"
+          width="166px"
+          height="220px"
           title={item.title}
           loading="eager"
           className="rounded-lg w-[170px] h-[250px] object-cover"
