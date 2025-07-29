@@ -32,13 +32,12 @@ function Home() {
     navigate(`/movie/${movie.title}`, { state: movie });
   };
 
-  const BlankPage = () => {
+  const Loader = ({ text = "Loading..." }) => {
     return (
-      <div className="w-full h-screen flex flex-wrap items-center justify-center">
-        <div className="">
-          <h1 className="text-2xl">
-            No post to show. Please Log In and Add post.
-          </h1>
+      <div className="w-full h-screen flex items-center justify-center">
+        <div className="flex flex-col items-center gap-3">
+          <div className="w-12 h-12 border-4 border-gray-500 border-t-transparent rounded-full animate-spin"></div>
+          <p className="text-lg text-gray-600 font-medium">{text}</p>
         </div>
       </div>
     );
@@ -70,7 +69,7 @@ function Home() {
             </div>
           ))}
       </div>
-      {data.length === 0 && <BlankPage />}
+      {data.length === 0 && <Loader />}
     </>
   );
 }

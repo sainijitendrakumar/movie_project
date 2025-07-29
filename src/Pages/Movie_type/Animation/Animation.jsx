@@ -34,11 +34,16 @@ function Animation() {
     navigate(`/movie/${movie.title}`, { state: movie });
   };
 
-  const BlankPage = () => (
-    <div className="w-full h-screen flex flex-wrap items-center justify-center">
-      <h1 className="text-2xl">No Bollywood movies found.</h1>
-    </div>
-  );
+  const Loader = ({ text = "Loading..." }) => {
+    return (
+      <div className="w-full h-screen flex items-center justify-center">
+        <div className="flex flex-col items-center gap-3">
+          <div className="w-12 h-12 border-4 border-gray-500 border-t-transparent rounded-full animate-spin"></div>
+          <p className="text-lg text-gray-600 font-medium">{text}</p>
+        </div>
+      </div>
+    );
+  };
   return (
     <div>
       <Helmet>
@@ -64,7 +69,7 @@ function Animation() {
             </div>
           ))
         ) : (
-          <BlankPage />
+          <Loader />
         )}
       </div>
     </div>
