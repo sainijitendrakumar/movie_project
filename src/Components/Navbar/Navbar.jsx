@@ -3,8 +3,20 @@ import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const handleCardClick = (movie) => {
+  const ClickToHome = (movie) => {
     navigate("/");
+  };
+  const ClickToBollywood = (movie) => {
+    navigate("/bollywood");
+  };
+  const ClickToHollywood = (movie) => {
+    navigate("/hollywood");
+  };
+  const ClickToAnimation = (movie) => {
+    navigate("/animation");
+  };
+  const ClickToSouthindian = (movie) => {
+    navigate("/southindian");
   };
   return (
     <div className="bg-[#1E293B] w-full rounded-t-md px-4 py-3 flex flex-col">
@@ -60,13 +72,34 @@ const Navbar = () => {
       <div className="flex mt-4 space-x-6 text-[#c5ebff] font-medium">
         <button
           className="px-3 py-1 bg-[#0F172A] rounded-md cursor-pointer"
-          onClick={() => handleCardClick()}
+          onClick={() => ClickToHome()}
         >
           Home
         </button>
-        <button className="hover:text-gray-300">Bollywood Movies</button>
-        <button className="hover:text-gray-300">Hollywood Hindi Movies</button>
-        <button className="hover:text-gray-300">South Hindi Dubbed</button>
+        <button
+          className="hover:text-gray-300 cursor-pointer"
+          onClick={() => ClickToBollywood()}
+        >
+          Bollywood Movies
+        </button>
+        <button
+          className="hover:text-gray-300 cursor-pointer"
+          onClick={() => ClickToHollywood()}
+        >
+          Hollywood Movies
+        </button>
+        <button
+          className="hover:text-gray-300 cursor-pointer"
+          onClick={() => ClickToSouthindian()}
+        >
+          South Indian Dubbed
+        </button>
+        <button
+          className="hover:text-gray-300 cursor-pointer"
+          onClick={() => ClickToAnimation()}
+        >
+          Animation
+        </button>
       </div>
     </div>
   );

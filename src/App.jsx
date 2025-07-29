@@ -8,6 +8,11 @@ import Terms from "./Pages/T&C/Terms";
 import AboutSection from "./Pages/AboutUs/AboutSection";
 import Disclaimer from "./Pages/Disclaimer/Disclaimer";
 import DMCA from "./Pages/DMCA_Policy/DMCA";
+import BollywoodMovies from "./Pages/Movie_type/Bollywood/BollywoodMovies";
+import Animation from "./Pages/Movie_type/Animation/Animation";
+import HollywoodMovies from "./Pages/Movie_type/Hollywood/HollywoodMovies";
+import Southndian from "./Pages/Movie_type/SouthIndian/SouthIndian";
+import SouthIndian from "./Pages/Movie_type/SouthIndian/SouthIndian";
 
 function App() {
   return (
@@ -22,6 +27,10 @@ function App() {
             <Route path="/terms_and_conditions" element={<Terms />} />
             <Route path="/disclaimer" element={<Disclaimer />} />
             <Route path="/dmca" element={<DMCA />} />
+            <Route path="/bollywood" element={<BollywoodMovies />} />
+            <Route path="/animation" element={<Animation />} />
+            <Route path="/hollywood" element={<HollywoodMovies />} />
+            <Route path="/southindian" element={<SouthIndian />} />
           </Routes>
           <Footer />
         </Router>

@@ -36,7 +36,7 @@ function Movieprofile() {
             margin: "5px",
           }}
         />
-        <h2 className="font-bold text-4xl text-gray-800">
+        <h2 className="font-bold text-4xl text-gray-800 text-center">
           Download | {movie.title} | {movie.language} | Full Movie 720p
         </h2>
         <p className="font-bold text-3xl my-3">
