@@ -19,7 +19,7 @@ const Navbar = () => {
     navigate("/southindian");
   };
   return (
-    <div className="bg-[#1E293B] w-full rounded-t-md px-4 py-3 flex flex-col">
+    <nav className="bg-[#1E293B] w-full  rounded-t-md px-4 py-3 flex flex-col">
       {/* Top bar */}
       <div className="flex items-center justify-between">
         {/* Logo */}
@@ -69,39 +69,50 @@ const Navbar = () => {
       </div>
 
       {/* Bottom Nav */}
-      <div className="flex mt-4 space-x-6 text-[#c5ebff] font-medium">
-        <button
-          className="px-3 py-1 bg-[#0F172A] rounded-md cursor-pointer"
-          onClick={() => ClickToHome()}
+      <div className="flex flex-wrap mt-4 space-x-6 text-[#c5ebff] font-medium">
+        <a
+          href="/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className=" rounded-md cursor-pointer"
         >
           Home
-        </button>
-        <button
-          className="hover:text-gray-300 cursor-pointer"
-          onClick={() => ClickToBollywood()}
+        </a>
+        <a
+          href="/bollywood"
+          target="_blank"
+          rel="noopener noreferrer"
+          className=" rounded-md cursor-pointer"
         >
           Bollywood Movies
-        </button>
-        <button
-          className="hover:text-gray-300 cursor-pointer"
-          onClick={() => ClickToHollywood()}
+        </a>
+
+        <a
+          href="/hollywood"
+          target="_blank"
+          rel="noopener noreferrer"
+          className=" rounded-md cursor-pointer"
         >
           Hollywood Movies
-        </button>
-        <button
-          className="hover:text-gray-300 cursor-pointer"
-          onClick={() => ClickToSouthindian()}
+        </a>
+        <a
+          href="/southindian"
+          target="_blank"
+          rel="noopener noreferrer"
+          className=" rounded-md cursor-pointer"
         >
           South Indian Dubbed
-        </button>
-        <button
-          className="hover:text-gray-300 cursor-pointer"
-          onClick={() => ClickToAnimation()}
+        </a>
+        <a
+          href="/animation"
+          target="_blank"
+          rel="noopener noreferrer"
+          className=" rounded-md cursor-pointer"
         >
           Animation
-        </button>
+        </a>
       </div>
-    </div>
+    </nav>
   );
 };
 
