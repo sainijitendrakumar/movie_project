@@ -15,7 +15,7 @@ function Animation() {
       conf.appwriteDatabaseId,
       conf.appwriteCollectionId,
       [
-        Query.equal("movie-type", "animation"), // Filter only Bollywood movies
+        Query.equal("movie-type", "animation"), // Filter only animation movies
         Query.orderDesc("$createdAt"),
       ]
     );
@@ -47,12 +47,12 @@ function Animation() {
   return (
     <div>
       <Helmet>
-        <title>Bollywood Movies | seehdmovie</title>
+        <title> Animation Movies | seehdmovie</title>
         <meta
           name="description"
-          content="Download the latest Bollywood movies in HD quality. Fast downloads, no registration required."
+          content="Download the latest animation movies in HD quality. Fast downloads, no registration required."
         />
-        <link rel="canonical" href="https://seehdmovie.xyz/bollywood" />
+        <link rel="canonical" href="https://seehdmovie.xyz/animation" />
       </Helmet>
       <h1 className="font-bold text-4xl text-center text-red-600 my-2">
         Latest Animation Movies

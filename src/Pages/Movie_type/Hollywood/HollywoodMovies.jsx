@@ -6,7 +6,7 @@ import HomePostCard from "../../../Components/Moviecard/HomePostCard";
 import { Helmet } from "react-helmet";
 import { Query } from "appwrite";
 
-function HollywoodMovies() {
+function hollywoodMovies() {
   const navigate = useNavigate();
   const [data, setData] = useState([]);
 
@@ -15,7 +15,7 @@ function HollywoodMovies() {
       conf.appwriteDatabaseId,
       conf.appwriteCollectionId,
       [
-        Query.equal("movie-type", "hollywood"), // Filter only Bollywood movies
+        Query.equal("movie-type", "hollywood"), // Filter only hollywood movies
         Query.orderDesc("$createdAt"),
       ]
     );
@@ -47,15 +47,15 @@ function HollywoodMovies() {
   return (
     <div>
       <Helmet>
-        <title>Bollywood Movies | seehdmovie</title>
+        <title> Hollywood Movies | seehdmovie</title>
         <meta
           name="description"
-          content="Download the latest Bollywood movies in HD quality. Fast downloads, no registration required."
+          content="Download the latest hollywood movies in HD quality. Fast downloads, no registration required."
         />
-        <link rel="canonical" href="https://seehdmovie.xyz/bollywood" />
+        <link rel="canonical" href="https://seehdmovie.xyz/hollywood" />
       </Helmet>
       <h1 className="font-bold text-4xl text-center text-red-600 my-2">
-        Latest Hollywood Movies
+        Latesthollywood Movies
       </h1>
       <div className="w-full flex flex-wrap card">
         {data && data.length !== 0 ? (
@@ -76,4 +76,4 @@ function HollywoodMovies() {
   );
 }
 
-export default HollywoodMovies;
+export default hollywoodMovies;

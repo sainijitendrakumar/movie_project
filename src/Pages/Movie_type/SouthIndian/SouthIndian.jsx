@@ -15,7 +15,7 @@ function SouthIndian() {
       conf.appwriteDatabaseId,
       conf.appwriteCollectionId,
       [
-        Query.equal("movie-type", "south-indian"), // Filter only Bollywood movies
+        Query.equal("movie-type", "south-indian"), // Filter only south indian movies
         Query.orderDesc("$createdAt"),
       ]
     );
@@ -48,12 +48,12 @@ function SouthIndian() {
   return (
     <div>
       <Helmet>
-        <title>Bollywood Movies | seehdmovie</title>
+        <title> South Indian Movies | seehdmovie</title>
         <meta
           name="description"
-          content="Download the latest Bollywood movies in HD quality. Fast downloads, no registration required."
+          content="Download the latest south indian movies in HD quality. Fast downloads, no registration required."
         />
-        <link rel="canonical" href="https://seehdmovie.xyz/bollywood" />
+        <link rel="canonical" href="https://seehdmovie.xyz/south indian" />
       </Helmet>
       <h1 className="font-bold text-4xl text-center text-red-600 my-2">
         Latest South Indian Movies

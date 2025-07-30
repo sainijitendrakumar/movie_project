@@ -3,21 +3,21 @@ import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const ClickToHome = (movie) => {
-    navigate("/");
-  };
-  const ClickToBollywood = (movie) => {
-    navigate("/bollywood");
-  };
-  const ClickToHollywood = (movie) => {
-    navigate("/hollywood");
-  };
-  const ClickToAnimation = (movie) => {
-    navigate("/animation");
-  };
-  const ClickToSouthindian = (movie) => {
-    navigate("/southindian");
-  };
+  // const ClickToHome = (movie) => {
+  //   navigate("/");
+  // };
+  // const ClickToBollywood = (movie) => {
+  //   navigate("/bollywood");
+  // };
+  // const ClickToHollywood = (movie) => {
+  //   navigate("/hollywood");
+  // };
+  // const ClickToAnimation = (movie) => {
+  //   navigate("/animation");
+  // };
+  // const ClickToSouthindian = (movie) => {
+  //   navigate("/southindian");
+  // };
   return (
     <nav className="bg-[#1E293B] w-full  rounded-t-md px-4 py-3 flex flex-col">
       {/* Top bar */}
@@ -72,7 +72,6 @@ const Navbar = () => {
       <div className="flex flex-wrap mt-4 space-x-6 text-[#c5ebff] font-medium">
         <a
           href="/"
-          target="_blank"
           rel="noopener noreferrer"
           className=" rounded-md cursor-pointer"
         >
@@ -80,7 +79,6 @@ const Navbar = () => {
         </a>
         <a
           href="/bollywood"
-          target="_blank"
           rel="noopener noreferrer"
           className=" rounded-md cursor-pointer"
         >
@@ -89,7 +87,6 @@ const Navbar = () => {
 
         <a
           href="/hollywood"
-          target="_blank"
           rel="noopener noreferrer"
           className=" rounded-md cursor-pointer"
         >
@@ -97,7 +94,6 @@ const Navbar = () => {
         </a>
         <a
           href="/southindian"
-          target="_blank"
           rel="noopener noreferrer"
           className=" rounded-md cursor-pointer"
         >
@@ -105,7 +101,6 @@ const Navbar = () => {
         </a>
         <a
           href="/animation"
-          target="_blank"
           rel="noopener noreferrer"
           className=" rounded-md cursor-pointer"
         >
