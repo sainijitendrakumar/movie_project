@@ -2,19 +2,29 @@ import React from "react";
 import { useEffect, useRef } from "react";
 
 function Banner() {
-  const adRef = useRef(null);
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src =
-      "www.highperformanceformat.com/6e8e81bc18ac4e0aa2ba72bc7a84addf/invoke.js"; // Replace with your Adsterra URL
-    script.async = true;
+  const banner = useRef(null);
 
-    if (adRef.current) {
-      adRef.current.innerHTML = "";
-      adRef.current.appendChild(script);
+  const atOptions = {
+    key: "6e8e81bc18ac4e0aa2ba72bc7a84addf",
+    format: "iframe",
+    height: 60,
+    width: 468,
+    params: {},
+  };
+
+  useEffect(() => {
+    if (banner.current && !banner.current.firstChild) {
+      const conf = document.createElement("script");
+      const script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src = `//www.highperformanceformat.com/6e8e81bc18ac4e0aa2ba72bc7a84addf/invoke.js`;
+      conf.innerHTML = `atOptions = ${JSON.stringify(atOptions)}`;
+
+      banner.current.append(conf);
+      banner.current.append(script);
     }
-  }, []);
-  return <div ref={adRef} style={{ width: "468px", height: "60px" }}></div>;
+  }, [banner]);
+  return <div ref={banner} style={{ width: "468px", height: "60px" }}></div>;
 }
 
 export default Banner;
