@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { useLocation, useParams } from "react-router-dom";
+import Banner from "../../Components/Adsterra/Banner/Banner_468x60/Banner";
 
 function Movieprofile() {
   const location = useLocation();
@@ -21,6 +22,7 @@ function Movieprofile() {
         <h1 className="text-3xl font-bold py-2 ">
           Download | {movie.title} | Full Movie 720p
         </h1>
+        <Banner />
         <p className="text-xl font-semibold text-center py-2">
           {movie.discription}
         </p>
