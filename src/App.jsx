@@ -13,12 +13,16 @@ import Animation from "./Pages/Movie_type/Animation/Animation";
 import HollywoodMovies from "./Pages/Movie_type/Hollywood/HollywoodMovies";
 import Southndian from "./Pages/Movie_type/SouthIndian/SouthIndian";
 import SouthIndian from "./Pages/Movie_type/SouthIndian/SouthIndian";
+import Popunder from "./Components/Adsterra/Popunder/Popunder";
+import Socialbar from "./Components/Adsterra/Socialbar/Socialbar";
 
 function App() {
   return (
     <>
       <div className="">
         <Router>
+          <Popunder />
+          <Socialbar />
           <Navbar />
           <Routes className="w-full h-screen">
             <Route path="/" element={<Home />} />

@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { useLocation, useParams } from "react-router-dom";
-import Banner from "../../Components/Adsterra/Banner/Banner_468x60/Banner";
+import Banner from "../../Components/Adsterra/Banner/Banner_760x60/Banner";
 
 function Movieprofile() {
   const location = useLocation();
