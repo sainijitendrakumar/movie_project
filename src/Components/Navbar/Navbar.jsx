@@ -3,28 +3,14 @@ import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const navigate = useNavigate();
-  // const ClickToHome = (movie) => {
-  //   navigate("/");
-  // };
-  // const ClickToBollywood = (movie) => {
-  //   navigate("/bollywood");
-  // };
-  // const ClickToHollywood = (movie) => {
-  //   navigate("/hollywood");
-  // };
-  // const ClickToAnimation = (movie) => {
-  //   navigate("/animation");
-  // };
-  // const ClickToSouthindian = (movie) => {
-  //   navigate("/southindian");
-  // };
+
   return (
     <nav className="bg-[#1E293B] w-full  rounded-t-md px-4 py-3 flex flex-col">
       {/* Top bar */}
       <div className="flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <div className="text-indigo-400 text-2xl font-bold">
+          <div className="text-indigo-400 text-xl sm:text-2xl font-bold">
             {/* Placeholder for logo */}
             {/* <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
               <path d="M10 0C4.477 0 0 4.477 0 10h2a8 8 0 0116 0h2c0-5.523-4.477-10-10-10zM2 10c0 4.418 3.582 8 8 8a8 8 0 008-8h-2a6 6 0 11-12 0H2z" />
@@ -34,11 +20,11 @@ const Navbar = () => {
         </div>
 
         {/* Search Bar */}
-        <div className="w-1/6">
+        <div className="w-1/3 sm:w-1/6 sm:w1/6">
           <input
             type="text"
             placeholder="Search"
-            className="w-full px-4 py-2 rounded-md bg-[#334155] text-white placeholder-gray-400 focus:outline-none"
+            className="w-full px-3 py-1 sm:px-4 sm:py-2 rounded-md bg-[#334155] text-white placeholder-gray-400 focus:outline-none"
           />
         </div>
 
@@ -69,7 +55,7 @@ const Navbar = () => {
       </div>
 
       {/* Bottom Nav */}
-      <div className="flex flex-wrap mt-4 space-x-6 text-[#c5ebff] font-medium">
+      <div className="flex flex-wrap mt-4 space-x-5 sm:space-x-6 text-[#c5ebff] font-medium">
         <a
           href="/"
           rel="noopener noreferrer"

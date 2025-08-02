@@ -53,7 +53,7 @@ function Home() {
         />
         <link rel="canonical" href="https://seehdmovie.xyz/" />
       </Helmet>
-      <h1 className="font-bold text-4xl text-center text-red-600 my-2">
+      <h1 className="font-bold text-2xl sm:text-4xl text-center text-red-600 my-2">
         Latest Movies & Web Series
       </h1>
       <div className="w-full flex flex-wrap card ">

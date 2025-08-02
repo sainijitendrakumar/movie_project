@@ -10,7 +10,7 @@ function Popunder() {
     document.body.appendChild(script);
 
     return () => {
-      document.body.removeChild(script); // clean up on unmount
+      document.body.removeChild(script);
     };
   }, []);
 
