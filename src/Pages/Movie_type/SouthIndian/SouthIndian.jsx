@@ -49,7 +49,7 @@ function SouthIndian() {
   return (
     <div>
       <Helmet>
-        <title> South Indian Movies | seehdmovie</title>
+        <title> Download Latest South Indian HD Movies Free - SeeHDMovie</title>
         <meta
           name="description"
           content="Download the latest south indian movies in HD quality. Fast downloads, no registration required."
@@ -57,7 +57,7 @@ function SouthIndian() {
         <link rel="canonical" href="https://seehdmovie.xyz/southindian" />
       </Helmet>
       <h1 className="font-bold text-4xl text-center text-red-600 my-2">
-        Latest South Indian Movies
+        Download Latest South Indian HD Movies Free - SeeHDMovie
       </h1>
       <div className=" w-full flex justify-center items-center">
         <Banner />

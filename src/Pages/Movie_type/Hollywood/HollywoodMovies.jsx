@@ -48,7 +48,7 @@ function hollywoodMovies() {
   return (
     <div>
       <Helmet>
-        <title> Hollywood Movies | seehdmovie</title>
+        <title> Download Latest Hollywood HD Movies Free - SeeHDMovie</title>
         <meta
           name="description"
           content="Download the latest hollywood movies in HD quality. Fast downloads, no registration required."
@@ -56,7 +56,7 @@ function hollywoodMovies() {
         <link rel="canonical" href="https://seehdmovie.xyz/hollywood" />
       </Helmet>
       <h1 className="font-bold text-4xl text-center text-red-600 my-2">
-        Latest Hollywood Movies
+        Download Latest Hollywood HD Movies Free
       </h1>
       <div className=" w-full flex justify-center items-center">
         <Banner />

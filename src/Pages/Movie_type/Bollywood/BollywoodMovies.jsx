@@ -48,7 +48,7 @@ function BollywoodMovies() {
   return (
     <>
       <Helmet>
-        <title> Bollywood Movies | seehdmovie</title>
+        <title> Download Latest Bollywood HD Movies Free - SeeHDMovie </title>
         <meta
           name="description"
           content="Download the latest Bollywood movies in HD quality. Fast downloads, no registration required."
@@ -56,7 +56,7 @@ function BollywoodMovies() {
         <link rel="canonical" href="https://seehdmovie.xyz/bollywood" />
       </Helmet>
       <h1 className="font-bold text-4xl text-center text-red-600 my-2">
-        Latest Bollywood Movies
+        Download Latest Bollywood HD Movies Free
       </h1>
       <div className=" w-full flex justify-center items-center">
         <Banner />

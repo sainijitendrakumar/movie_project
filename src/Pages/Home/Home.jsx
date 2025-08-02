@@ -46,7 +46,10 @@ function Home() {
   return (
     <>
       <Helmet>
-        <title>seehdmovie</title>
+        <title>
+          Watch & Download Latest HD Movies | Bollywood, South, Hollywood -
+          SeeHDMovie
+        </title>
         <meta
           name="description"
           content="Download the latest Hollywood, Bollywood, and South Indian movies in HD quality. Fast downloads, no registration required. New releases updated daily!"
@@ -54,7 +57,7 @@ function Home() {
         <link rel="canonical" href="https://seehdmovie.xyz/" />
       </Helmet>
       <h1 className="font-bold text-2xl sm:text-4xl text-center text-red-600 my-2">
-        Latest Movies & Web Series
+        Watch & Download Latest HD Movies
       </h1>
       <div className="w-full flex flex-wrap card ">
         {data &&
