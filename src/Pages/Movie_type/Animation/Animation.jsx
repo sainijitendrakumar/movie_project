@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import HomePostCard from "../../../Components/Moviecard/HomePostCard";
 import { Helmet } from "react-helmet";
 import { Query } from "appwrite";
+import Banner from "../../../Components/Adsterra/Banner/Banner_760x60/Banner";
 
 function Animation() {
   const navigate = useNavigate();
@@ -57,6 +58,9 @@ function Animation() {
       <h1 className="font-bold text-4xl text-center text-red-600 my-2">
         Latest Animation Movies
       </h1>
+      <div className=" w-full flex justify-center items-center">
+        <Banner />
+      </div>
       <div className="w-full flex flex-wrap card">
         {data && data.length !== 0 ? (
           data.map((movie) => (
