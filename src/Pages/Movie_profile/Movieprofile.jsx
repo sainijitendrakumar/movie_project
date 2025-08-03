@@ -17,6 +17,11 @@ function Movieprofile() {
             name="description"
             content="Get the latest dual audio and dubbed movies in Hindi, English, Tamil & Telugu. Watch or download in high quality without ads!"
           />
+          <meta
+            name="keywords"
+            content="HD movie download, Bollywood movies, Hollywood movies, Dual audio movies, 720p movies, 1080p movies, full movie download, free movie download, Hindi dubbed movies, South Indian movies, movie download site, latest movies 2025, seehdmovie, seehdmovie.xyz"
+          />
+
           <link rel="canonical" href="https://seehdmovie.xyz/movie/" />
         </Helmet>
         <h1 className="text-3xl font-bold py-2 ">

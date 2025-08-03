@@ -53,6 +53,10 @@ function hollywoodMovies() {
           name="description"
           content="Download the latest hollywood movies in HD quality. Fast downloads, no registration required."
         />
+        <meta
+          name="keywords"
+          content="HD movie download, Bollywood movies, Hollywood movies, Dual audio movies, 720p movies, 1080p movies, full movie download, free movie download, Hindi dubbed movies, South Indian movies, movie download site, latest movies 2025, seehdmovie, seehdmovie.xyz"
+        />
         <link rel="canonical" href="https://seehdmovie.xyz/hollywood" />
       </Helmet>
       <h1 className="font-bold text-4xl text-center text-red-600 my-2">
