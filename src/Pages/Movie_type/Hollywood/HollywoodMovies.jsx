@@ -56,7 +56,7 @@ function hollywoodMovies() {
         <link rel="canonical" href="https://seehdmovie.xyz/hollywood" />
       </Helmet>
       <h1 className="font-bold text-4xl text-center text-red-600 my-2">
-        Download Latest Hollywood HD Movies Free
+        Download Latest Hollywood HD Movies Free - SeeHDMovie
       </h1>
       <div className=" w-full flex justify-center items-center">
         <Banner />
