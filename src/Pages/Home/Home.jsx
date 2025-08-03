@@ -51,6 +51,10 @@ function Home() {
           SeeHDMovie
         </title>
         <meta
+          name="p:domain_verify"
+          content="4baba56aa16dd9cc9630550364bc372b"
+        />
+        <meta
           name="description"
           content="Download the latest Hollywood, Bollywood, and South Indian movies in HD quality. Fast downloads, no registration required. New releases updated daily!"
         />
