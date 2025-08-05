@@ -31,10 +31,22 @@ function App() {
             <Route path="/terms_and_conditions" element={<Terms />} />
             <Route path="/disclaimer" element={<Disclaimer />} />
             <Route path="/dmca" element={<DMCA />} />
-            <Route path="/bollywood" element={<BollywoodMovies />} />
-            <Route path="/animation" element={<Animation />} />
-            <Route path="/hollywood" element={<HollywoodMovies />} />
-            <Route path="/southindian" element={<SouthIndian />} />
+            <Route
+              path="/category/download_bollywood_movies"
+              element={<BollywoodMovies />}
+            />
+            <Route
+              path="/category/download_animation_movies"
+              element={<Animation />}
+            />
+            <Route
+              path="/category/download_hollywood_movies"
+              element={<HollywoodMovies />}
+            />
+            <Route
+              path="/category/download_south_indian_movies"
+              element={<SouthIndian />}
+            />
           </Routes>
           <Footer />
         </Router>

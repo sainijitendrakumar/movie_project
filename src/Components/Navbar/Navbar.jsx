@@ -64,7 +64,7 @@ const Navbar = () => {
           Home
         </a>
         <a
-          href="/bollywood"
+          href="/category/download_bollywood_movies"
           rel="noopener noreferrer"
           className=" rounded-md cursor-pointer"
         >
@@ -72,25 +72,25 @@ const Navbar = () => {
         </a>
 
         <a
-          href="/hollywood"
+          href="/category/download_hollywood_movies"
           rel="noopener noreferrer"
           className=" rounded-md cursor-pointer"
         >
           Hollywood Movies
         </a>
         <a
-          href="/southindian"
+          href="/category/download_south_indian_movies"
           rel="noopener noreferrer"
           className=" rounded-md cursor-pointer"
         >
           South Indian Dubbed
         </a>
         <a
-          href="/animation"
+          href="/category/download_animation_movies"
           rel="noopener noreferrer"
           className=" rounded-md cursor-pointer"
         >
-          Animation
+          Animation movies
         </a>
       </div>
     </nav>
