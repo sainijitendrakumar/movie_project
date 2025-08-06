@@ -58,7 +58,10 @@ function SouthIndian() {
           name="keywords"
           content="HD movie download, Bollywood movies, Hollywood movies, Dual audio movies, 720p movies, 1080p movies, full movie download, free movie download, Hindi dubbed movies, South Indian movies, movie download site, latest movies 2025, seehdmovie, seehdmovie.xyz"
         />
-        <link rel="canonical" href="https://seehdmovie.xyz/southindian" />
+        <link
+          rel="canonical"
+          href="https://seehdmovie.xyz/category/download_south_indian_movies"
+        />
       </Helmet>
       <h1 className="font-bold text-4xl text-center text-red-600 my-2">
         Download Latest South Indian HD Movies Free - SeeHDMovie
