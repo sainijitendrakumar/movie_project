@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import MovieSearch from "../MovieSearch/MovieSearch";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -21,11 +22,7 @@ const Navbar = () => {
 
         {/* Search Bar */}
         <div className="w-1/3 sm:w-1/6 sm:w1/6">
-          <input
-            type="text"
-            placeholder="Search"
-            className="w-full px-3 py-1 sm:px-4 sm:py-2 rounded-md bg-[#334155] text-white placeholder-gray-400 focus:outline-none"
-          />
+          <MovieSearch />
         </div>
 
         {/* Icons */}
